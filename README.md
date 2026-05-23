@@ -4,7 +4,7 @@
 
 Claude, GPT, Gemini, Grok, Qwen, GLM, Kimi in parallel. For contested decisions — architecture, plan review, pricing, strategy — where a single model might be confidently wrong.
 
-Works in both Claude Code (developer audience) and Claude Cowork (knowledge-worker audience). Same plugin, same skill, different distribution marketplaces. For Cursor, see [`mumo-chat/mumo-cursor`](https://github.com/mumo-chat/mumo-cursor). For VS Code (GitHub Copilot), see [`mumo-chat/mumo-vscode`](https://github.com/mumo-chat/mumo-vscode).
+Works in both Claude Code (developer audience) and Claude Cowork (knowledge-worker audience). Same plugin, same skill, different distribution marketplaces.
 
 ## When to use
 
@@ -36,14 +36,6 @@ Inside Claude Code:
 Open Claude Desktop → **Cowork** tab → **Customize** → **Browse plugins** → search for `mumo` → **Install**. Or browse the full catalog at [claude.com/plugins](https://claude.com/plugins/).
 
 > **Note:** Claude Code and Cowork have separate plugin panels backed by different marketplaces. Installing in one surface does **not** auto-install in the other — install in each separately.
-
-## Install — VS Code (GitHub Copilot)
-
-Install the [**mumo** extension](https://marketplace.visualstudio.com/items?itemName=mumo.mumo-vscode) from the Visual Studio Marketplace. It registers the MCP server natively and stores your key in VS Code's `SecretStorage` — no `MUMO_API_KEY` env-var required.
-
-For the full story and manual-install alternatives, see [`mumo-chat/mumo-vscode`](https://github.com/mumo-chat/mumo-vscode).
-
-The auto-triggering skill from this repo is not bundled in the VS Code extension — Copilot's agent mode routes to the MCP server organically when you mention mumo or ask for a panel. For the explicit skill experience, use Claude Code or Cowork.
 
 ## API key setup
 
@@ -77,8 +69,6 @@ See [mumo.chat/install](https://mumo.chat/install) for setup and [mumo.chat/docs
 - Product — https://mumo.chat
 - MCP reference — https://mumo.chat/docs/mcp
 - REST API — https://mumo.chat/docs/api
-- Cursor plugin — https://github.com/mumo-chat/mumo-cursor
-- VS Code extension — https://github.com/mumo-chat/mumo-vscode
 - Issues — https://github.com/mumo-chat/mumo-claude/issues
 
 ## License
