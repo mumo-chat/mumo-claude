@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0 — 2026-06-19
+
+Coordinated release — all clients aligned on 0.4.0. Skill triggering + prompt-voice updates (Trello #245), rendered from the mumo-mcp baseline.
+
+- Triggering: dropped the "contested" gate — the description now leads with pre-implementation review (esp. anything touching auth, security, tokens, payments, data exposure, or migrations), not "contested decisions only."
+- `when_to_use` rewritten to match — review-before-implementation framing with the same high-stakes domains.
+- Skip rule now keys on "no ambiguity over the correctness of your approach" (was "tasks where the user has already specified exactly what to build").
+- Author-bias counter (When to use): if you authored the plan or code under review, that's a reason FOR a panel — the author is the worst-positioned reviewer of their own work.
+- New "Prompt voice" section: write the prompt first-person as the operator, not "You are X" case-study framing.
+- Surface `claim_map_url` after each round so the user can open the claim map directly.
+
 ## 0.3.1 — 2026-05-22
 
 README update.
