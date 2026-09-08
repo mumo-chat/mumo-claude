@@ -1,10 +1,8 @@
-# mumo — Claude Code + Cowork plugin
+# mumo — Claude Code plugin
 
 **Multi-model responses + cross-model reactions. Want more rounds? Context carries automatically. Stop when you have what you need.**
 
 Claude, GPT, Gemini, Grok, DeepSeek, Kimi, and more, in parallel. Each model answers in full and then reacts to the others' claims in its own words — typed cross-model reactions, not a merged verdict — for architecture, plan review, pricing, and strategy calls worth checking across labs.
-
-Works in both Claude Code (developer audience) and Claude Cowork (knowledge-worker audience). Same plugin, same skill, different distribution marketplaces.
 
 ## When to use
 
@@ -22,20 +20,16 @@ The bundled skill auto-triggers on this category and stays quiet on factual look
 - **MCP server** — `https://mumo.chat/api/mcp`. Tools: `create_deliberation`, `wait_for_round`, `append_round`, `get_session`, `list_sessions`, `list_models`, `share_session`, `get_credit`.
 - **Auto-triggering skill** — `skills/mumo/SKILL.md` tells the agent *when* to reach for the panel so you don't have to
 
-## Install — Claude Code
+## Install
 
-Inside Claude Code:
+Inside Claude Code, add this repo as a marketplace and install from it — this always gives you the current release:
 
 ```
-/plugin marketplace add anthropics/claude-plugins-official
-/plugin install mumo
+/plugin marketplace add mumo-chat/mumo-claude
+/plugin install mumo@mumo
 ```
 
-## Install — Claude Cowork
-
-Open Claude Desktop → **Cowork** tab → **Customize** → **Browse plugins** → search for `mumo` → **Install**. Or browse the full catalog at [claude.com/plugins](https://claude.com/plugins/).
-
-> **Note:** Claude Code and Cowork have separate plugin panels backed by different marketplaces. Installing in one surface does **not** auto-install in the other — install in each separately.
+mumo is also listed in Anthropic's community marketplace (`/plugin marketplace add anthropics/claude-plugins-community`, then `/plugin install mumo@claude-community`). That listing is pinned to a specific commit by Anthropic's review pipeline and can lag this repo, so prefer the direct path above for the latest version. mumo is not in the curated `claude-plugins-official` marketplace.
 
 ## API key setup
 
@@ -56,7 +50,7 @@ Invoke the skill explicitly if the agent doesn't reach for it on its own:
 
 ### Try it first
 
-Ask Claude Code or Cowork something the panel will want to engage with:
+Ask Claude Code something the panel will want to engage with:
 
 > Postgres or MongoDB for our event store given 50k events/day, a Postgres-experienced team, and a 3-month runway? What would we regret 6 months in?
 
