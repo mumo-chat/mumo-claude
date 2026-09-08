@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.0 — 2026-09-08
+
+Coordinated client release rendered from the mumo-mcp 0.6.0 baseline.
+
+- `SKILL.md`: `share_session` documented in the tools table; `wait_for_round` taught in its one-id form (`session_id` alone resolves to the round in flight; `round_id` only for an earlier round); intro names the current model families and the typed cross-model reactions.
+- `allowed-tools` gains `mcp__plugin_mumo_mumo__share_session` — sharing no longer trips a permission prompt mid-deliberation.
+- `server.json` 0.3.0: tool list includes `share_session`.
+- `references/operating-notes.md` re-synced with the baseline.
+- README tool list and intro updated.
+
 ## 0.5.0 — 2026-07-04
 
 Reaction-visibility model + per-round Takeaway.

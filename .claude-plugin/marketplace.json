@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "mumo",
-  "description": "Multi-model deliberation panel for Claude Code.",
+  "description": "Multi-model deliberation panel for Claude Code — full responses plus claim-level typed reactions from models across labs.",
   "owner": {
     "name": "mumo"
   },

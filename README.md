@@ -2,7 +2,7 @@
 
 **Multi-model responses + cross-model reactions. Want more rounds? Context carries automatically. Stop when you have what you need.**
 
-Claude, GPT, Gemini, Grok, Qwen, GLM, Kimi in parallel. For contested decisions — architecture, plan review, pricing, strategy — where a single model might be confidently wrong.
+Claude, GPT, Gemini, Grok, DeepSeek, Kimi, and more, in parallel. Each model answers in full and then reacts to the others' claims in its own words — typed cross-model reactions, not a merged verdict — for architecture, plan review, pricing, and strategy calls worth checking across labs.
 
 Works in both Claude Code (developer audience) and Claude Cowork (knowledge-worker audience). Same plugin, same skill, different distribution marketplaces.
 
@@ -19,7 +19,7 @@ The bundled skill auto-triggers on this category and stays quiet on factual look
 
 ## What's in the box
 
-- **MCP server** — `https://mumo.chat/api/mcp`. Tools: `create_deliberation`, `wait_for_round`, `append_round`, `get_session`, `list_sessions`, `list_models`, `get_credit`.
+- **MCP server** — `https://mumo.chat/api/mcp`. Tools: `create_deliberation`, `wait_for_round`, `append_round`, `get_session`, `list_sessions`, `list_models`, `share_session`, `get_credit`.
 - **Auto-triggering skill** — `skills/mumo/SKILL.md` tells the agent *when* to reach for the panel so you don't have to
 
 ## Install — Claude Code
