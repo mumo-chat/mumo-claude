@@ -1,9 +1,10 @@
 {
   "name": "chat.mumo/mcp",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "mumo multi-model deliberation — structured panel discussions across frontier AI models with claim-level reactions and cross-model claim maps",
   "tools": [
     "create_deliberation",
+    "ask_a_model",
     "wait_for_round",
     "get_session",
     "append_round",
