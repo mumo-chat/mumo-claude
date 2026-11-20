@@ -54,7 +54,7 @@ Ask Claude Code something the panel will want to engage with:
 
 > Postgres or MongoDB for our event store given 50k events/day, a Postgres-experienced team, and a 3-month runway? What would we regret 6 months in?
 
-The first round returns each model's prose plus a cross-model claim map showing where the panel agrees and where it splits. You can stop there, or `append_round` with typed snippets (KEEP / EXPLORE / CHALLENGE / CORE / SHIFT) — moderator attention on what mattered and why.
+The first round returns each model's response plus the models' reactions to each other's claims, showing where the panel agrees and where it splits. You can stop there, or `append_round` with your own typed reactions (KEEP / EXPLORE / CHALLENGE / CORE / SHIFT) — moderator attention on what mattered and why.
 
 See [mumo.chat/install](https://mumo.chat/install) for setup and [mumo.chat/docs/mcp](https://mumo.chat/docs/mcp) for the tool reference. The canonical skill lives in [`skills/mumo/SKILL.md`](skills/mumo/SKILL.md) — that's what Claude Code loads.
 
