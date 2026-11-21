@@ -29,8 +29,6 @@ Inside Claude Code, add this repo as a marketplace and install from it — this 
 /plugin install mumo@mumo
 ```
 
-mumo is also listed in Anthropic's community marketplace (`/plugin marketplace add anthropics/claude-plugins-community`, then `/plugin install mumo@claude-community`). That listing is pinned to a specific commit by Anthropic's review pipeline and can lag this repo, so prefer the direct path above for the latest version. mumo is not in the curated `claude-plugins-official` marketplace.
-
 ## Sign in
 
 The plugin connects with a browser sign-in. No API key is needed.
@@ -40,7 +38,7 @@ The plugin connects with a browser sign-in. No API key is needed.
 3. On the consent screen, click **Allow access**. The screen shows an address on this computer (`localhost`): that is Claude Code waiting for the sign-in to finish.
 4. When the browser says the sign-in succeeded, return to Claude Code.
 
-Check the connection with a free call: ask Claude Code to *list mumo's available models*.
+Check the connection with a free call: ask Claude Code to *list mumo's available models*. Claude Code asks before the first use of each mumo tool; choose "always allow" to stop the prompts.
 
 To disconnect later, remove **Claude Code** under **Settings → API Keys → Connected apps** at [mumo.chat/settings/api-keys](https://mumo.chat/settings/api-keys).
 
