@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.1 — 2026-11-21
+
+- The plugin now connects with a browser sign-in. It no longer asks for an API key at install. After installing or updating, run `/mcp`, select `mumo`, choose **Authenticate**, and allow access in the browser.
+- The bundled MCP server address is now `https://mumo.chat/api/mcp/oauth`. The tools, billing and limits are the same.
+- If you are updating from an earlier version, sign in once. The API key you entered before is no longer used by the plugin and stays valid on your account until you revoke it.
+- To keep using an API key (CI, unattended agents), add the key server directly with `claude mcp add`; the README has the command.
+- `SKILL.md` setup text and the README updated to match.
+
 ## 0.8.0 — 2026-11-20
 
 Coordinated client release rendered from the mumo-mcp 0.8.0 baseline.
