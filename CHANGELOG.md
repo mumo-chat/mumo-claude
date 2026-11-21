@@ -8,6 +8,7 @@ Coordinated client release rendered from the mumo-mcp 0.9.0 baseline. It goes wi
 - New section, "Hand the wait to a subagent". Where the client supports subagents, the agent creates the round itself and has a subagent on the same model wait and read. The subagent hands back the round without the full answers, the points no model reacted to, and a short note on tone. It hands back only a finished round, and says so when it could not read the whole result.
 - Refusals start with `Error: <code>`.
 - `references/operating-notes.md` updated to match.
+- Setup text: for a delegated wait, a subagent may need to load the mumo tool with ToolSearch before calling it.
 
 ## 0.8.1 — 2026-11-21
 
