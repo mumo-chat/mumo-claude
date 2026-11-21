@@ -5,7 +5,7 @@
 Changes for Anthropic's plugin directory. No change to the tools or the skill's guidance.
 
 - The skill no longer pre-approves the mumo tools. Claude Code asks before the first use of each tool; choose "always allow" to stop the prompts.
-- The plugin has an icon (`.claude-plugin/icon.png`) and declares its privacy policy (`privacyPolicyUrl`). The README links the privacy policy and terms.
+- The plugin has an icon and declares its privacy policy (`privacyPolicyUrl`). The README links the privacy policy and terms.
 - Older changelog entries no longer spell out an environment variable name for the key.
 
 ## 0.9.0 — 2026-11-21
