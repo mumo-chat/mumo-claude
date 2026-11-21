@@ -1,13 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "mumo",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Multi-model deliberation panel. Diverse AI voices + claim-level reactions on contested decisions.",
   "author": {
     "name": "mumo",
     "url": "https://mumo.chat"
   },
   "homepage": "https://mumo.chat/install/claude-code",
+  "privacyPolicyUrl": "https://mumo.chat/legal/privacy",
   "repository": "https://github.com/mumo-chat/mumo-claude.git",
   "license": "MIT",
   "keywords": [

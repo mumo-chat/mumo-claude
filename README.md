@@ -83,6 +83,8 @@ See [mumo.chat/install](https://mumo.chat/install) for setup and [mumo.chat/docs
 - MCP reference — https://mumo.chat/docs/mcp
 - REST API — https://mumo.chat/docs/api
 - Issues — https://github.com/mumo-chat/mumo-claude/issues
+- Privacy — https://mumo.chat/legal/privacy
+- Terms — https://mumo.chat/legal/terms
 
 ## License
 

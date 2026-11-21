@@ -1,16 +1,6 @@
 ---
 name: mumo
 description: Runs a multi-model deliberation across models from different labs (Claude, GPT, Gemini, Grok, DeepSeek, Kimi, and more) via mumo's MCP server, returning full responses plus typed cross-model reactions. Use when independent perspectives are needed on architecture/product decisions, design and plan review before implementation, pre-launch pressure tests, tradeoffs with multiple defensible framings, or explicit user requests for a mumo panel. Especially valuable for pre-implementation review of anything touching auth, security, tokens, payments, data exposure, or migrations. Requires the mumo MCP server to be connected.
-allowed-tools:
-  - mcp__plugin_mumo_mumo__create_deliberation
-  - mcp__plugin_mumo_mumo__ask_a_model
-  - mcp__plugin_mumo_mumo__wait_for_round
-  - mcp__plugin_mumo_mumo__append_round
-  - mcp__plugin_mumo_mumo__get_session
-  - mcp__plugin_mumo_mumo__list_sessions
-  - mcp__plugin_mumo_mumo__list_models
-  - mcp__plugin_mumo_mumo__share_session
-  - mcp__plugin_mumo_mumo__get_credit
 argument-hint: "[question or topic for the panel]"
 when_to_use: |
   Use when: reviewing a plan, spec, architecture, API, or schema before implementation — especially anything touching auth, security, tokens, payments, data exposure, or migrations; technical or product decisions with real tradeoffs; red-team pressure testing; exploring unknowns or stress-testing assumptions; strategy questions with multiple defensible framings; or explicit user requests ("ask mumo", "run a mumo panel", "what do different models think").

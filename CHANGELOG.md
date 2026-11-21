@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.1 — 2026-11-21
+
+Changes for Anthropic's plugin directory. No change to the tools or the skill's guidance.
+
+- The skill no longer pre-approves the mumo tools. Claude Code asks before the first use of each tool; choose "always allow" to stop the prompts.
+- The plugin has an icon (`.claude-plugin/icon.png`) and declares its privacy policy (`privacyPolicyUrl`). The README links the privacy policy and terms.
+- Older changelog entries no longer spell out an environment variable name for the key.
+
 ## 0.9.0 — 2026-11-21
 
 Coordinated client release rendered from the mumo-mcp 0.9.0 baseline. It goes with mumo MCP server 1.4.0.
@@ -99,7 +107,7 @@ Removed `agents/mumo-moderator.md`. The agent positioned itself as the moderator
 
 Plugin architecture — mumo now installs and behaves like a native Claude Code capability.
 
-- **API key via keychain**: `userConfig` with `sensitive: true` prompts for the key at install time and stores it in the system keychain. No more `export MUMO_API_KEY` in your shell.
+- **API key via keychain**: `userConfig` with `sensitive: true` prompts for the key at install time and stores it in the system keychain. No more exporting the key in your shell.
 - **No permission prompts**: `allowed-tools` in SKILL.md pre-approves all seven MCP tools. Deliberations run without interruption.
 - **Moderator agent**: `agents/mumo-moderator.md` — a dedicated subagent with tool restrictions, high effort, and the mumo skill preloaded. Can run deliberations in an isolated context.
 - **Auto-triggering**: `when_to_use` frontmatter gives Claude richer context for deciding when to reach for mumo without being asked.
@@ -141,6 +149,6 @@ Listing refresh. No runtime behavior change.
 Initial release.
 
 - `.claude-plugin/plugin.json` manifest for Claude Code + Cowork distribution.
-- `.mcp.json` wiring remote streamable-HTTP MCP server at `https://mumo.chat/api/mcp` with `${MUMO_API_KEY}` bearer auth.
+- `.mcp.json` wiring remote streamable-HTTP MCP server at `https://mumo.chat/api/mcp` with an API key from the environment as bearer auth.
 - `server.json` metadata for MCP Registry (`registry.modelcontextprotocol.io`) submission.
 - `skills/mumo/SKILL.md` — auto-triggering skill.
