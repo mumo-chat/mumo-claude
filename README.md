@@ -17,7 +17,7 @@ The bundled skill auto-triggers on this category and stays quiet on factual look
 
 ## What's in the box
 
-- **MCP server** — `https://mumo.chat/api/mcp`. Tools: `create_deliberation`, `ask_a_model`, `wait_for_round`, `append_round`, `get_session`, `list_sessions`, `list_models`, `share_session`, `get_credit`.
+- **MCP server** — `https://mumo.chat/api/mcp/oauth`, connected with a browser sign-in. Tools: `create_deliberation`, `ask_a_model`, `wait_for_round`, `append_round`, `get_session`, `list_sessions`, `list_models`, `share_session`, `get_credit`.
 - **Auto-triggering skill** — `skills/mumo/SKILL.md` tells the agent *when* to reach for the panel so you don't have to
 
 ## Install
@@ -31,14 +31,33 @@ Inside Claude Code, add this repo as a marketplace and install from it — this 
 
 mumo is also listed in Anthropic's community marketplace (`/plugin marketplace add anthropics/claude-plugins-community`, then `/plugin install mumo@claude-community`). That listing is pinned to a specific commit by Anthropic's review pipeline and can lag this repo, so prefer the direct path above for the latest version. mumo is not in the curated `claude-plugins-official` marketplace.
 
-## API key setup
+## Sign in
 
-The plugin prompts for your mumo API key at install time and stores it securely in your system keychain.
+The plugin connects with a browser sign-in. No API key is needed.
 
-1. Sign up at https://mumo.chat and create a platform key at [Settings → API Keys](https://mumo.chat/settings/api-keys) (keys start with `mmo_live_`)
-2. Paste it when the plugin prompts you during install/enable
+1. In Claude Code, run `/mcp`, select `mumo`, and choose **Authenticate**.
+2. Your browser opens to **Connect Claude Code to mumo**. Sign in to mumo if asked (or create an account; every account gets free credit each month), confirm your account, and click **Continue**.
+3. On the consent screen, click **Allow access**. The screen shows an address on this computer (`localhost`): that is Claude Code waiting for the sign-in to finish.
+4. When the browser says the sign-in succeeded, return to Claude Code.
 
-If you need to update the key later, reinstall or reconfigure the plugin. For manual or dev setups, you can also export `MUMO_API_KEY` as an environment variable.
+Check the connection with a free call: ask Claude Code to *list mumo's available models*.
+
+To disconnect later, remove **Claude Code** under **Settings → API Keys → Connected apps** at [mumo.chat/settings/api-keys](https://mumo.chat/settings/api-keys).
+
+### Using an API key instead
+
+For CI or an unattended agent, skip the plugin and add the key server directly, with a key from [Settings → API Keys](https://mumo.chat/settings/api-keys) (keys start with `mmo_live_`):
+
+```
+claude mcp add --transport http mumo https://mumo.chat/api/mcp \
+  --header "Authorization: Bearer mmo_live_..."
+```
+
+This adds the tools without the plugin's skill.
+
+### Upgrading from 0.8.0 or earlier
+
+Earlier versions asked for an API key at install. From 0.8.1 the plugin signs in instead, so after updating, sign in once with the steps above. The key you entered is no longer used by the plugin; it stays valid on your account until you revoke it.
 
 ## Using the panel
 

@@ -23,7 +23,7 @@ mumo runs a deliberation across models from different labs (Claude, GPT, Gemini,
 
 ## Setup
 
-The plugin prompts for a mumo API key at install time. If the key is missing or tools return auth errors, direct the user to https://mumo.chat/settings/api-keys to create one (keys start with `mmo_live_`).
+The plugin bundles the mumo MCP server (`https://mumo.chat/api/mcp/oauth`) and connects with a browser sign-in; no API key is required. If the server is not connected or tools return auth errors, ask the user to sign in: in Claude Code, run `/mcp`, select `mumo`, choose **Authenticate**, and allow access in the browser.
 
 ## When to use
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "mumo",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Multi-model deliberation panel. Diverse AI voices + claim-level reactions on contested decisions.",
   "author": {
     "name": "mumo",
@@ -25,19 +25,7 @@
   "mcpServers": {
     "mumo": {
       "type": "http",
-      "url": "https://mumo.chat/api/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.api_key}"
-      }
-    }
-  },
-  "userConfig": {
-    "api_key": {
-      "type": "string",
-      "title": "mumo API Key",
-      "description": "Platform key from https://mumo.chat/settings/api-keys (starts with mmo_live_)",
-      "sensitive": true,
-      "required": true
+      "url": "https://mumo.chat/api/mcp/oauth"
     }
   }
 }
